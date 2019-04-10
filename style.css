@@ -1,43 +1,88 @@
 body{
     margin-right: 0px;
     display: grid;
-    grid-template-areas: "header header header aside"
-                         "navbar navbar . aside"
+    grid-template-areas: "header header header header"
+                         "navbar navbar navbar navbar"
                          "section section section aside"
                          "footer footer footer footer";
-    grid-template-rows: 20vh
-                        5vh
-                        50vh
+    grid-template-rows: 40px 
+                        4vh 
+                        50vh 
                         20vh;
-    grid-gap: 3px;
+    grid-template-columns: 24vw 24vw 24vw 24vw;
+    grid-gap: 5px;
                         
 }
-header {
-    grid-area: header;
-    background-color: aquamarine;
 
+
+
+header {
+
+    grid-area: header;
+    justify-content: left;
+    display: flex;
+
+}
+header img {
+    height: 40px;
+    width: 40px; 
+    
 }
 
 nav {
     grid-area: navbar;
-    background-color: red;
+    background-color: #24bee8;
+    display: flex;
+    justify-content: space-around;
+
     
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+
+}
+
+nav a:hover {
+    color: black;
+
 }
 
 section {
     grid-area: section;
-    background-color: yellow;
+    size: 1000px 550px;
+    background-color:white;
+    background-image: url(https://jornal.usp.br/wp-content/uploads/20171214_00_ideia_inovacao_empreendorismo.jpg)
+
 }
 
 aside {
     grid-area: aside;
-    background-color: blue;
+    background-color: white;
+    text-align: justify;
+    padding: 10px 10px 50px 10px;
 }
 
 footer {
     grid-area: footer;
-    background-color: green;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+footer div{
+    width: 200px;
+    height: 30px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
 
+
+}
+footer div img {
+    width: 60px;
+    height: 60px;
+}
 
                         
